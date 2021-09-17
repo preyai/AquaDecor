@@ -1,0 +1,19 @@
+@import './variables';
+
+body {
+    font-family: "Myriad Pro";
+}
+.phones {
+    a {
+        color: #000000;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+    }
+}
+.nav-link {
+    color: $color-gray;
+    &:hover {
+        color: $color-blue;
+    }
+}
