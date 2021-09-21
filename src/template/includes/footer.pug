@@ -1,6 +1,32 @@
+- var menu = [
+-   {title:'Каталог',items: ['Мозайка','Керамическая плитка','Керамогранит']},
+-   {title:'Предложения',items: ['Хиты продаж','Распродажа','Услуги', 'Бренды', 'Доставка и оплата']},
+-   {title:'Информация',items: ['Новости','Полезная информация','Контакты']}
+-]
+
 footer
-    .container
-        p
-        | &copy; 2016 |
-        i.fa.fa-value(aria-hidden='true') &nbsp;
-        a(href='#') View Source
+    .container-fluid
+        .row 
+            each val in menu
+                .col 
+                    .nav-column 
+                        .nav-column__title= val.title
+                        nav.nav.flex-column
+                            each item in val.items
+                                a.nav-link(href="#")= item
+            .col 
+                .nav-column 
+                    .nav-column__title Контакты
+                    .d-flex.flex-column
+                        a.phone(href="#") +7 (812) 777-77-77
+                        a.phone(href="#") +7 (812) 888-88-88
+                        .sm Режим работы:
+                        .sm-light с 09:00 до 21:00 - без выходных
+                        | и без перерывов
+        .d-flex.last-line
+            div 2021 © “Aqua Decor” - Все права защищены
+            a(href="#") Политика конфиденциальности
+            a(href="#") Карта сайта
+            div
+                a.icon-moon.icon-vk(href="#") 
+                a.icon-moon.icon-inst(href="#") 

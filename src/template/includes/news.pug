@@ -1,0 +1,9 @@
+- var values = [1,2,3];
+.container-fluid
+    h2 НАШИ НОВОСТИ
+    .row 
+        each val in values
+            .col-lg-4 
+                include ./newsCard
+    .text-center.py-4
+        a(href="#") Смотреть все новости

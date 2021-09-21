@@ -1,0 +1,14 @@
+- var values = [1,2,3,1,2,3,1,2];
+.container-fluid
+    .tabs 
+        nav 
+            .nav#nav-tab(role="tablist")
+                button.nav-link.active#nav-tab-hit(data-bs-toggle="tab" data-bs-target="#nav-hit" type="button" role="tab" aria-controls="nav-hit" aria-selected="true") ХИТЫ
+                button.nav-link#nav-tab-sale(data-bs-toggle="tab" data-bs-target="#nav-sale" type="button" role="tab" aria-controls="nav-sale" aria-selected="true") РАСПРОДАЖА
+        .tab-content#nav-tabContent
+            .tab-pane.fade.show.active#nav-hit(role="tabpanel" aria-labelledby="nav-tab-hit")
+                .row
+                    each val in values
+                        .col-3 
+                            include ./tovarCard
+            .tab-pane.fade#nav-sale(role="tabpanel" aria-labelledby="nav-tab-sale") test 2
