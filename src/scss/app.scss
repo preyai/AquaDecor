@@ -1,11 +1,6 @@
-@import "./fonts";
-@import "./variables";
-@import "~bootstrap/scss/bootstrap";
-@import "./icons";
-@import "./base";
-
-.icon-cart {
-  &:before {
-    content: "\e901";
-  }
-}
+@import './fonts';
+@import './variables';
+@import '~bootstrap/scss/bootstrap';
+@import '@splidejs/splide/dist/css/themes/splide-default.min.css';
+@import './icons';
+@import './base';

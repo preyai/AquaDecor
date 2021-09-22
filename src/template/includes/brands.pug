@@ -1,0 +1,9 @@
+- var values = [1,2,3,1,2,3,1,2,3];
+div.container-fluid#bgr0
+    h2 ПОПУЛЯРНЫЕ БРЕНДЫ:
+    .brands
+        each val in values
+            .brands__item
+                img(src=require('../../img/brand-plch.png'), alt="brand")
+        .brands__item
+            .brands__more +

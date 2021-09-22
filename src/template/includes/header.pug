@@ -1,5 +1,5 @@
 header 
-    .container-fullid.border-bottom
+    .container-fluid.border-bottom
         .d-flex.justify-content-between
             nav.nav
                 li.nav-item
@@ -17,6 +17,36 @@ header
                 li.nav-item
                     a.nav-link.active(href='#') Item 2
             .d-flex.phones 
-                a.phone(href="#") +7 (812) 77-77-77
-                a.phone(href="#") +7 (812) 77-77-77
-    span.icon-moon.icon-cart
+                a.phones__item(href="#") +7 (812) 77-77-77
+                a.phones__item(href="#") +7 (812) 77-77-77
+    .container-fluid
+        .d-flex.align-items-center.justify-content-between.py-2
+            a.logo(href="/") 
+                img.img(src=require("../../img/logo.png"))
+            nav.main-nav
+                ul.main-nav__list 
+                    li.main-nav__item 
+                        a.main-nav__link(href="#") 
+                            i.icon-moon.icon-catalog
+                            span Каталог
+                    li.main-nav__item 
+                        a.main-nav__link(href="#") 
+                            i.icon-moon.icon-hit
+                            span Хиты
+                                sup.main-nav__count 16
+                    li.main-nav__item 
+                        a.main-nav__link(href="#") 
+                            i.icon-moon.icon-sale 
+                            span Распродажа
+                                sup.main-nav__count 16
+                    li.main-nav__item 
+                        a.main-nav__link(href="#") 
+                            i.icon-moon.icon-serch 
+                            span Поиск
+                    li
+                        .mini-cart
+                            i.icon-moon.icon-cart
+                                span 8
+                            .mini-cart__price
+                                | 8000
+                                sub руб.
